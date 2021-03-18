@@ -1,0 +1,85 @@
+#about {
+    .bg-lazer-tdi {
+        background-image: url(../../assets/images/banner-piscina-tdi.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+
+        
+
+        @media (max-width: 1000px) {
+            height: 300px;
+        }
+    }
+
+    .block-color {
+        height: 100%;
+        background: rgb(75, 119, 145);
+        background: -moz-linear-gradient(
+            81deg,
+            rgba(75, 119, 145, 1) 0%,
+            rgba(75, 72, 80, 1) 31%,
+            rgba(85, 78, 76, 1) 57%,
+            rgba(88, 96, 105, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            81deg,
+            rgba(75, 119, 145, 1) 0%,
+            rgba(75, 72, 80, 1) 31%,
+            rgba(85, 78, 76, 1) 57%,
+            rgba(88, 96, 105, 1) 100%
+        );
+        background: linear-gradient(
+            81deg,
+            rgba(75, 119, 145, 1) 0%,
+            rgba(75, 72, 80, 1) 31%,
+            rgba(85, 78, 76, 1) 57%,
+            rgba(88, 96, 105, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4b7791",endColorstr="#586069",GradientType=1);
+
+        .text-area {
+            padding: 10%;
+
+            .uk-button-default {
+                border-radius: 16px;
+                border: none;
+                color: #525252;
+                font-family: $title-font;
+                font-weight: 900;
+                background: -moz-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+                background: -webkit-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+                background: linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1",endColorstr="#fccf8b",GradientType=1);
+
+                transition: all 0.3s ease 0s;
+                margin-top: 10px;
+
+                &:hover {
+                    box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+                    transform: translateY(-7px);
+                }
+            }
+
+            h2 {
+                color: #ffffff;
+                text-transform: uppercase;
+
+                span {
+                    font-weight: 900;
+                }
+            }
+
+            hr {
+                width: 5%;
+            }
+
+            p {
+                color: #ffffff;
+                font-size: 14px;
+            }
+        }
+    }
+}

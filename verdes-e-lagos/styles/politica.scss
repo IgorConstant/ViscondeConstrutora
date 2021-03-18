@@ -1,0 +1,29 @@
+#intro-politica {
+    background: #1fa3dc;
+    height: 400px;
+
+    h1 {
+        font-family: "Bitter", serif;
+        text-align: center;
+        color: #fff;
+    }
+
+    .uk-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+#text-area {
+
+    h3,
+    h6 {
+        font-family: "Bitter", serif;
+    }
+
+    p {
+        font-family: "Roboto", sans-serif;
+    }
+}

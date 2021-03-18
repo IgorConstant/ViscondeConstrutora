@@ -1,0 +1,62 @@
+header {
+  .uk-navbar-nav {
+    a {
+      font-family: $text-font;
+      font-weight: 500;
+      color: $link-color;
+      min-height: 35px;
+      padding: 0 20px;
+
+      &:hover {
+        border: 1px solid $gradient-bg;
+        border-radius: 16px;
+        color: #fff;
+      }
+    }
+  }
+
+  .uk-navbar {
+    padding: 40px;
+    background: $header-bg;
+
+    @media (max-width: 768.98px) {
+      padding: 20px;
+    }
+  }
+
+  .uk-sticky {
+    background: $header-bg;
+  }
+}
+
+.uk-offcanvas-bar {
+  a {
+    font-family: $title-font;
+    font-weight: 900;
+    color: #fff !important;
+    font-size: 20px !important;
+    text-transform: uppercase;
+  }
+}
+
+.uk-offcanvas-brand {
+  padding: 20px 0px;
+}
+
+header .uk-offcanvas-bar ul .social-icons {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.uk-navbar-nav>li>a:active {
+  border: 1px solid $gradient-bg;
+  border-radius: 16px;
+  color: #fff;
+}
+
+
+.uk-navbar-nav>li>a:focus {
+  border: 1px solid $gradient-bg;
+  border-radius: 16px;
+  color: #fff;
+}

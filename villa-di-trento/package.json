@@ -1,0 +1,42 @@
+{
+  "name": "villa-ditrento",
+  "version": "1.0.0",
+  "description": "LP - Villa di Trento",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorConstant/villaditrento.git"
+  },
+  "author": "Igor Henrique Constant - Duetto.ag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorConstant/villaditrento/issues"
+  },
+  "homepage": "https://igorconstant.github.io/villaditrento",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "uikit": "^3.5.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
+}

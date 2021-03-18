@@ -1,0 +1,93 @@
+#form-area {
+    padding: 40 0px;
+    font-family: 'Sen', sans-serif;
+    background: #e2e3e4;
+
+    @media(min-width: 1024px) {
+        .form-contact {
+            width: 70%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    form {
+        .uk-input {
+            border: 3px solid $secondary-color;
+            background: transparent;
+        }
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 14px;
+        }
+
+        .uk-form-label {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .uk-button-default {
+            border-radius: 10px;
+            background: rgb(55, 149, 70);
+            background: -moz-linear-gradient(90deg, rgba(55, 149, 70, 1) 0%, rgba(100, 211, 163, 1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(55, 149, 70, 1) 0%, rgba(100, 211, 163, 1) 100%);
+            background: linear-gradient(90deg, rgba(55, 149, 70, 1) 0%, rgba(100, 211, 163, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#379546", endColorstr="#64d3a3", GradientType=1);
+            color: #fff;
+            font-family: 'Basic', sans-serif;
+            padding: 13px;
+            font-size: 18px;
+            -webkit-box-shadow: 7px -2px 16px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 7px -2px 16px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 7px -2px 16px -5px rgba(0, 0, 0, 0.75);
+            border: none;
+
+            transition: transform .5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+
+
+    .icons-area {
+
+        table {
+            font-weight: 300;
+
+            font-size: 23px;
+            color: $secondary-color;
+
+            td {
+                line-height: 30px;
+            }
+
+            span {
+                font-weight: 800;
+                font-size: 23px;
+            }
+        }
+    }
+
+
+    .slider-mobile {
+        padding: 40px 0;
+
+        p {
+            font-weight: 400;
+            color: $secondary-color;
+            font-size: 20px;
+            padding: 0px 40px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

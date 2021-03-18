@@ -1,0 +1,125 @@
+#plantas {
+    padding: 100px 0;
+
+    .uk-tab {
+        margin-left: 0px;
+
+        .uk-active {
+            background: -moz-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            background: -webkit-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            background: linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+            a {
+                color: #525252;
+            }
+        }
+
+        li {
+            border: 1px solid #d1d1d1;
+            padding: 0px;
+
+            a {
+                color: #34332f;
+                font-size: 14px;
+                font-weight: 900;
+                font-family: $title-font !important;
+                border-bottom: none;
+                padding: 15px 5px;
+
+                @media only screen and (min-width: 980px) and (max-width: 1099px) {
+                    font-size: 11px;
+                }
+
+                span {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    #content {
+        box-shadow: 0px 15px 15px 0px rgba(50, 50, 50, 0.13);
+        transition: 1s;
+
+        @media (min-width: 1024px) {
+            padding: 80px 110px;
+        }
+
+        @media (max-width: 999px) {
+            padding: 40px;
+        }
+
+
+        .text-planta {
+            .mt-plantas {
+                font-size: 45px;
+                font-weight: 900;
+                font-family: $title-font;
+                color: #5a5a5a;
+
+                span {
+                    text-transform: capitalize;
+                }
+            }
+
+            .mt-plantas-garden {
+                font-family: $title-font;
+                color: #5a5a5a;
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 1.5em;
+
+                span {
+                    text-transform: capitalize;
+                }
+
+            }
+
+            .privativo {
+                font-size: 14px;
+                text-transform: uppercase !important;
+            }
+
+            .garden-min {
+                font-size: 24px;
+
+                span {
+                    text-transform: capitalize;
+                }
+            }
+
+            .text-min {
+                font-weight: 900;
+                color: #aaaaaa;
+                font-family: $title-font;
+                text-transform: capitalize;
+            }
+
+            p {
+                color: #34332f;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            .uk-button-default {
+                margin-top: 40px;
+                font-family: $title-font;
+                font-weight: 900;
+                border-radius: 10px;
+                padding: 8px 40px;
+                color: #fff;
+                background-color: #34332f;
+
+                transition: all 0.3s ease 0s;
+                margin-top: 20px;
+
+                &:hover {
+                    box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+                    transform: translateY(-7px);
+                }
+            }
+        }
+    }
+}

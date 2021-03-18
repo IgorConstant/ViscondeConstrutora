@@ -1,0 +1,23 @@
+header {
+    .navbar-expand-lg {
+        background-color: $blue-btn;
+    }
+
+    .nav-link {
+        color: $white-color !important;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 13px;
+        padding: 10px 20px !important;
+
+        @media screen and (min-device-width: 1000px) and (max-device-width: 1099px) {
+            font-size: 11px;
+        }
+    }
+
+    .cta-btn {
+        background-color: $green-btn;
+        border-radius: 5px;
+        padding: 10px 15px !important;
+    }
+}

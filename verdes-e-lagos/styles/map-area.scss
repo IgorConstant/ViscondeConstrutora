@@ -1,0 +1,105 @@
+#map-area {
+    background-image: url(../../assets/images/banner-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1200px) {
+        height: 690px;
+    }
+
+    .green-block {
+        background-color: #90ca2a;
+        padding: 40px;
+
+        @media (min-width: 1200px) {
+            width: 350px;
+            height: 252px;
+        }
+
+        p {
+            font-family: "Bitter", serif;
+            font-size: 28px;
+            color: #fff;
+        }
+
+        .tel {
+            color: #fff;
+            font-family: "Roboto", sans-serif !important;
+            font-weight: 900;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .end {
+            font-family: "Roboto", sans-serif !important;
+            font-size: 14px;
+        }
+    }
+
+    .leaf-map {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            margin-top: -130px;
+        }
+    }
+
+    .uk-button-default {
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 900;
+        font-family: "Roboto", sans-serif !important;
+    }
+
+    .form-blue {
+        background-color: #1fa3dc;
+        opacity: 0.95;
+        padding: 40px;
+
+        @media (min-width: 1200px) {
+            width: 391px;
+            height: 100%px;
+        }
+
+        h2 {
+            font-family: "Bitter", serif;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .uk-form-label {
+            color: #fff !important;
+            font-family: "Roboto", sans-serif;
+        }
+
+        label {
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .uk-button-default {
+            color: #fff;
+            background-color: #8ac714;
+            border-color: #8ac714;
+            font-weight: 900;
+            border-radius: 50px;
+            font-family: "Roboto", sans-serif;
+            padding: 10px 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .nao-aparece {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+#banner-topo {
+    .selo-visconde {
+        @media (min-width: 1200px) {
+            right: 13%;
+        }
+
+
+        @media (max-width: 999px) {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .banner-mobile {
+        @media(max-width: 960px) {
+            background-image: url(../../assets/images/banner-mobile-tdi.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+        }
+    }
+}

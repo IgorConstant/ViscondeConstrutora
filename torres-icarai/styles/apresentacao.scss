@@ -1,0 +1,103 @@
+#apresentacao {
+    background: #404040;
+    padding: 100px 0 0 0;
+
+    .text-area {
+        @media (max-width: 1000px) {
+            padding: 40px;
+        }
+
+        p {
+            font-size: 40px;
+            line-height: 65px;
+            text-transform: uppercase;
+            font-family: $title-font;
+            color: #fff;
+            font-weight: 900;
+
+            @media (max-width: 1000px) {
+                line-height: 45px;
+            }
+
+            span {
+                font-size: 65px;
+                background: -webkit-linear-gradient(41deg, #ffa7b1, #fccf8b);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media (max-width: 1000px) {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .uk-button-default {
+            border-radius: 16px;
+            border: none;
+            color: #525252;
+            font-family: $title-font;
+            font-weight: 900;
+            background: -moz-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            background: -webkit-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            background: linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+            transition: all 0.3s ease 0s;
+            margin-top: 10px;
+
+            &:hover {
+                box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+                transform: translateY(-7px);
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .logo-apresentacao {
+            padding: 40px;
+        }
+    }
+
+    .scale-in-ver-bottom {
+        -webkit-animation: scale-in-ver-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-ver-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+   
+    @-webkit-keyframes scale-in-ver-bottom {
+        0% {
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes scale-in-ver-bottom {
+        0% {
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            opacity: 1;
+        }
+    }
+
+}

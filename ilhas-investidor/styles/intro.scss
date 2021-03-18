@@ -1,0 +1,168 @@
+#form-area {
+  .container-fluid {
+    padding-left: 0px !important;
+
+    .col-lg-6,
+    .col-xl-6 {
+      padding: 0px !important;
+    }
+  }
+
+  .bg-predio {
+    .selo-visconde {
+      h1 {
+        text-transform: uppercase;
+        font-family: "Roboto Slab", serif;
+        font-weight: 100;
+        color: #08e1a4;
+
+        span {
+          color: #fff;
+        }
+      }
+
+      @media (min-width: 1001px) {
+        padding: 85px 185px;
+      }
+
+      @media (max-width: 1000px) {
+        padding: 50px;
+        font-size: 12px;
+
+        h1 {
+          font-size: 25px;
+        }
+      }
+
+      p {
+        margin: 0px !important;
+      }
+
+      .first {
+        color: #08e1a4;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 5px !important;
+        font-size: 12px;
+      }
+
+      .two {
+        color: #fff;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  .bg-lightgreen {
+    background: #08e1a4;
+    padding: 50px 0px;
+
+    @media (min-width: 1200px) {
+      img {
+        margin-top: 10px;
+      }
+
+      .grid-area {
+        display: inline-grid;
+        grid-template-columns: 180px 300px 300px 150px;
+        grid-column-gap: 50px;
+      }
+    }
+
+    .fa-check-square {
+      font-size: 25px;
+    }
+
+    @media (max-width: 1100px) {
+      padding: 1.5rem !important;
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: 1199px) and (min-width: 900px) {
+      .grid-area {
+        display: inline-grid;
+        grid-template-columns: 400px 350px;
+        grid-column-gap: 50px;
+
+        .grid-item {
+          padding: 20px 0px;
+        }
+      }
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 0px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 20px;
+
+      span {
+        color: #fff;
+        font-size: 25px;
+      }
+
+      @media (max-width: 900px) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+
+  .form-contato {
+    font-family: "Roboto Slab", serif;
+    padding: 50px;
+
+    @media (min-width: 1200px) {
+      padding: 70px 130px;
+    }
+
+    .form-control {
+      &::placeholder {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-weight: 100;
+      text-transform: uppercase;
+
+      @media (max-width: 900px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    label {
+      color: #fff;
+    }
+
+    #bt-enviar {
+      color: #222222;
+      background-color: #08e1a4;
+      border: none;
+      padding: 20px 25px;
+      font-weight: 800;
+      border-radius: 10px;
+      font-size: 14px;
+
+      @media (max-width: 900px) {
+        padding: 12px 25px;
+      }
+    }
+
+
+
+
+  }
+
+}

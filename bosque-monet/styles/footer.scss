@@ -1,0 +1,52 @@
+footer {
+
+
+    @media (max-width: 900px) {
+        text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+        .logo-visconde-footer {
+            width: 70%;
+            margin-top: -16px;
+        }
+    }
+
+    .text-footer {
+
+        p {
+            color: #4e6084;
+            font-weight: 500;
+            font-size: 14px;
+
+            @media (min-width: 1200px) {
+                text-align: right;
+            }
+        }
+
+        .assinatura-duetto {
+            text-decoration: none;
+            color: #fbbe00;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    .social-icons {
+
+        .fa-linkedin,
+        .fa-facebook-square,
+        .fa-instagram {
+            color: #4e6084;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+    }
+}

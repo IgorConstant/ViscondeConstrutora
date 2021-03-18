@@ -1,0 +1,67 @@
+#chamada-mrv {
+    background: $secondary-color;
+    font-family: 'Sen', sans-serif;
+
+
+    .block-text {
+        p {
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .uk-button-default {
+            border-radius: 10px;
+            background: rgb(55, 149, 70);
+            background: linear-gradient(133deg, rgba(55, 149, 70, 1) 40%, rgba(100, 211, 163, 1) 86%);
+            color: #fff;
+            font-family: "Basic", sans-serif;
+            padding: 13px;
+            font-size: 18px;
+            border: none;
+
+
+            transition: transform .5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .chamada-mrv {
+        text-align: center;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    .img-fachada {
+        margin-top: 50px;
+    }
+
+    @media(max-width: 900px) {
+        .chamada-mrv {
+            padding: 0px 29px;
+
+            img {
+                width: 100%;
+                padding: 40px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1024px) and (min-width: 901px) {
+        .block-text {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .uk-button-default {
+            padding: 0px !important;
+        }
+    }
+}

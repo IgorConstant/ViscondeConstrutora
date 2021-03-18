@@ -1,0 +1,37 @@
+#itens-de-lazer {
+  background-color: #373632;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: "Sen", sans-serif;
+
+  ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 0px;
+
+    > li {
+      width: 25%;
+      text-align: left;
+      margin: 0.75rem 0;
+      font-size: 17px;
+      line-height: 100%;
+      color: #fff;
+
+      b {
+        width: 35px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768.98px) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+footer {
+    font-family: "Roboto", sans-serif;
+
+    p {
+        font-size: 12px;
+    }
+
+    .logo-and-copy {
+        margin-top: 40px;
+
+        .assinatura {
+            padding-top: 30px;
+            color: #72747e;
+
+            @media (min-width: 1024px) {
+                text-align: right;
+            }
+
+            @media (max-width: 900px) {
+                text-align: center;
+            }
+
+            a {
+                font-size: 12px;
+                text-decoration: none;
+                color: #72747e;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .creci {
+            text-align: center;
+        }
+
+        .logo-footer {
+            text-align: center;
+        }
+    }
+}

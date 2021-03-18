@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+
+/* Variavéis */
+@import "themes/variables";
+
+/* CUSTOM */
+@import "themes/base";
+@import "themes/header";
+@import "themes/footer";
+@import "themes/intro";
+@import "themes/empreendimento";
+@import "themes/fotos";
+@import "themes/localizacao";
+@import "themes/plantas";
+@import "themes/social-bar";
+@import "themes/politica";

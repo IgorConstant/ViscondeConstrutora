@@ -1,0 +1,44 @@
+#tour {
+    @media (min-width: 1024px) {
+        height: 100%;
+        background: rgb(64, 64, 64);
+        background: -moz-linear-gradient(348deg, rgba(64, 64, 64, 1) 47%, rgba(255, 255, 255, 1) 47.1%);
+        background: -webkit-linear-gradient(348deg, rgba(64, 64, 64, 1) 47%, rgba(255, 255, 255, 1) 47.1%);
+        background: linear-gradient(348deg, rgba(64, 64, 64, 1) 47%, rgba(255, 255, 255, 1) 47.1%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#ffffff",GradientType=1);
+    }
+
+    @media (max-width: 1000px) {
+        padding: 60px 0;
+    }
+
+    .text-area {
+        .title,
+        .title-gradient {
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 35px;
+            color: $font-color;
+        }
+
+        .title-gradient {
+            font-size: 60px;
+            background: -webkit-linear-gradient(90deg, #ffa7b1, #fccf8b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 18px;
+            color: $font-color;
+            font-weight: 500;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

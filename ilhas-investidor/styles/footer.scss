@@ -1,0 +1,127 @@
+footer {
+  .bg-black {
+    background-image: url(../../assets/images/banner-contato-footer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    @media (min-width: 1200px) {
+      height: 690px;
+    }
+  }
+
+  .text-img {
+    margin-top: 90px;
+
+    p {
+      color: #fff;
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 40px;
+      text-align: center;
+
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+
+  .logo-footer {
+    padding-top: 8%;
+  }
+
+  .text-footer {
+    font-weight: 100;
+    color: #08e1a4;
+    font-size: 35px;
+    margin-top: 40px;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
+  }
+
+  .btn-cta {
+    text-align: center;
+
+    .cta-footer {
+      background: #08e1a4;
+      border-color: #08e1a4;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-weight: bold;
+      padding: 14px 47px;
+      color: #222;
+      font-family: "Roboto Slab", serif;
+    }
+  }
+
+  .form-contato {
+    background-image: url(../../assets/images/banner-forms.png);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: "Roboto Slab", serif;
+    padding: 40px;
+
+    @media (min-width: 1200px) {
+      padding: 60px 100px;
+      height: 690px;
+    }
+
+    .form-control {
+      &::placeholder {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
+    label {
+      color: #fff;
+    }
+
+    #bt-enviar-form2 {
+      color: #222;
+      background-color: #00c86d;
+      border: none;
+      padding: 20px 30px;
+      font-weight: 800;
+      border-radius: 10px;
+      font-size: 14px;
+      font-family: "Roboto Slab", serif;
+    }
+  }
+
+  .finish-area {
+    @media (max-width: 1099px) {
+      p {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      color: #fff;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}

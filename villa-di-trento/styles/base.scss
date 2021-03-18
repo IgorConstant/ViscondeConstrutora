@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+#intro {
+  .uk-slideshow-items {
+    @media (min-width: 1200px) {
+      min-height: 713.625px;
+    }
+
+    .selo-visconde {
+      @media (min-width: 1200px) {
+        right: 13%;
+      }
+
+      img {
+        width: 70%;
+      }
+
+      @media (max-width: 999px) {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .uk-position-bottom-left {
+      bottom: 53px;
+
+      @media (max-width: 900px) {
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+#parallax {
+  background-image: url(../../assets/images/banner-parallax.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 561px;
+
+  @media (max-width: 900px) {
+    height: 300px;
+  }
+
+  .uk-container {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+  }
+}
+
+#copyright {
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+
+  @media (max-width: 900px) {
+    text-align: center;
+  }
+
+  @media (min-width: 1200px) {
+    .logo-visconde-footer {
+      width: 70%;
+      margin-top: 20px;
+    }
+  }
+
+  padding: 30px;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .text-footer {
+    margin-top: 46px !important;
+
+    p {
+      color: #4e6084;
+      font-weight: 500;
+      font-size: 14px;
+
+      @media (min-width: 1200px) {
+        text-align: right;
+      }
+    }
+
+    .assinatura-duetto {
+      text-decoration: none;
+      color: #fbbe00;
+    }
+  }
+
+  .social-icons {
+    margin-top: 46px;
+
+    .fa-linkedin,
+    .fa-facebook-square,
+    .fa-instagram {
+      color: #4e6084;
+      margin-right: 10px;
+      font-size: 25px;
+    }
+  }
+
+  .logo-creci {
+    margin-top: 25px;
+  }
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+  }
+}
+
+#tk-page {
+  background: #e2e3e4;
+  height: 100vh;
+
+  .uk-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .title {
+      h1,
+      h2 {
+        font-family: "Sen", sans-serif;
+        color: #333;
+      }
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      .uk-button-default {
+        color: #fff;
+        background: #62d09e;
+        border: none;
+        font-weight: 900;
+        border-radius: 50px;
+        font-family: "Sen", sans-serif;
+        padding: 10px 40px;
+      }
+    }
+  }
+}
+
+#alert {
+  .cookie-popup {
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.15);
+    line-height: 150%;
+    transition: opacity 0.5s;
+    opacity: 0;
+
+    @media (max-width: 999px) {
+      left: 0.25rem;
+      margin-bottom: 6%;
+    }
+  }
+
+  .cookie-popup--short {
+    right: none;
+    width: 21.875rem;
+  }
+
+  .cookie-popup--dark {
+    background: #000;
+    color: #fff;
+  }
+
+  .cookie-popup--not-accepted {
+    opacity: 1;
+    animation: cookie-popup-in 0.5s ease forwards;
+  }
+
+  .cookie-popup--accepted {
+    opacity: 0;
+  }
+
+  .cookie-popup a {
+    color: skyblue;
+  }
+
+  .cookie-popup a:visited {
+    color: skyblue;
+    text-decoration: none;
+  }
+
+  .cookie-popup-actions {
+    flex: 1;
+    text-align: right;
+  }
+
+  .cookie-popup-actions button {
+    color: #08e1a4;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .cookie-popup-actions button:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes cookie-popup-in {
+    from {
+      bottom: -6.25rem;
+    }
+
+    to {
+      bottom: 1.25rem;
+    }
+  }
+}

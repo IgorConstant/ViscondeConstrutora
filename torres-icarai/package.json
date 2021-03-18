@@ -1,0 +1,23 @@
+{
+  "name": "tdi",
+  "version": "1.0.0",
+  "description": "Landing Page para Captação - Torres d'Icaraí",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Henrique Constant - Duetto.ag",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "uikit": "^3.6.10"
+  },
+  "devDependencies": {
+    "gulp-connect-php": "^1.0.3"
+  }
+}

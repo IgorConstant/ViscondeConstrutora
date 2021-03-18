@@ -1,0 +1,40 @@
+#icons-lazer {
+  background-color: #f4ffec;
+
+  h2 {
+    font-family: "Bitter", serif;
+    color: #72747e;
+    text-align: center !important;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 0px;
+
+    > li {
+      width: 26%;
+      text-align: left;
+      margin: 0.75rem 0;
+      font-size: 15px;
+      line-height: 100%;
+      color: #72747e;
+      font-family: "Bitter", serif;
+
+      b {
+        width: 35px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768.98px) {
+        width: 100%;
+      }
+    }
+  }
+}

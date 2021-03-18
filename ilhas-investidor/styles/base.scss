@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;900&family=Roboto:wght@400;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 83px;
+
+  @media (max-width: 1000px) {
+    padding-top: 69px;
+  }
+}
+
+.copyright {
+  padding: 20px 0;
+
+  p {
+    margin-bottom: 0px;
+    font-size: 12px;
+
+    @media (max-width: 900px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .produzido-por {
+    a {
+      font-weight: 800;
+      color: #000;
+    }
+
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      float: right;
+    }
+  }
+}
+
+.modal-header {
+  background-image: url(../../assets/images/banner-forms.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-bottom: 0px;
+  padding: 40px;
+
+  h4 {
+    font-family: "Roboto Slab", serif;
+    color: #08e1a4;
+    font-weight: 900;
+  }
+
+  .fa-times {
+    color: #08e1a4;
+  }
+}
+
+#modalDownload {
+  background-color: rgba(8, 225, 164, 0.9);
+}
+
+.modal-body {
+  background-image: url(../../assets/images/banner-forms.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-top: 0px;
+  padding: 40px;
+
+  #bt-enviar3 {
+    background-color: #08e1a4;
+    border: none;
+    padding: 20px 25px;
+    font-weight: 800;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #222;
+    font-family: "Roboto Slab", serif;
+  }
+
+  label {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .form-control {
+    font-family: "Roboto Slab", serif;
+  }
+}
+
+.dont-display {
+  display: none;
+}
+
+.btn-download {
+  color: #fff;
+  background-color: #00c86d;
+  border: none;
+  padding: 20px 25px;
+  font-weight: 800;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  background: #00c86d;
+}
+
+.btn-primary:hover {
+  background: #00c86d;
+}
+
+.juridico {
+  background: #d6d6d6;
+  padding: 20px;
+
+  p {
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+}
+
+#modalInfo1,
+#modalInfo2,
+#modalInfo3,
+#modalInfo4 {
+  .modal-content {
+    .modal-header {
+      padding: 10px !important;
+      background-color: #e5e5e5 !important;
+      background-image: none;
+    }
+
+    .modal-body {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: #e5e5e5 !important;
+      background-image: none;
+      padding: 20px !important;
+
+      p {
+        font-family: "Roboto", sans-serif;
+        color: #000;
+      }
+    }
+  }
+}
+
+.fa-question-circle {
+  font-size: 12px;
+}
+
+#tk-page {
+  background-color: #222222;
+  height: 100vh;
+
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    color: #08e1a4;
+    font-family: "Roboto Slab", serif;
+    margin-top: 40px;
+  }
+
+  h4 {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    margin-top: 40px;
+  }
+}
+
+#alert {
+  .cookie-popup {
+
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, .15);
+    line-height: 150%;
+    transition: opacity .5s;
+    opacity: 0;
+  }
+
+  .cookie-popup--short {
+    right: none;
+    width: 21.875rem;
+  }
+
+  .cookie-popup--dark {
+    background: #000;
+    color: #fff;
+  }
+
+  .cookie-popup--not-accepted {
+    opacity: 1;
+    animation: cookie-popup-in .5s ease forwards;
+  }
+
+  .cookie-popup--accepted {
+    opacity: 0;
+  }
+
+  .cookie-popup a {
+    color: skyblue;
+  }
+
+  .cookie-popup a:visited {
+    color: skyblue;
+    text-decoration: none;
+  }
+
+  .cookie-popup-actions {
+    flex: 1;
+    text-align: right;
+  }
+
+  .cookie-popup-actions button {
+    color: #08e1a4;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .cookie-popup-actions button:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes cookie-popup-in {
+    from {
+      bottom: -6.25rem;
+    }
+
+    to {
+      bottom: 1.25rem;
+    }
+  }
+}

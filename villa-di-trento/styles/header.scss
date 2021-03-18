@@ -1,0 +1,65 @@
+header {
+    .uk-navbar-nav {
+        a {
+            font-family: 'Sen', sans-serif;
+            color: $secondary-color;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+    }
+
+    .uk-sticky {
+        background: #fff;
+    }
+
+
+
+    .btn-wpp {
+        background: rgb(55, 149, 70);
+        background: -moz-linear-gradient(90deg, rgba(55, 149, 70, 1) 0%, rgba(100, 211, 163, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(55, 149, 70, 1) 0%, rgba(100, 211, 163, 1) 100%);
+        background: linear-gradient(90deg, rgba(55, 149, 70, 1) 0%, rgba(100, 211, 163, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#379546", endColorstr="#64d3a3", GradientType=1);
+        color: #fff !important;
+        border-radius: 50px;
+        min-height: 38px !important;
+        margin: 18px 0;
+
+        .fa-whatsapp {
+            margin-right: 5px;
+        }
+
+        animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+        box-shadow: 0 0 0 0 #0F8552;
+    }
+
+    .uk-navbar-toggle {
+        margin-right: 15px;
+    }
+
+    .uk-offcanvas-bar {
+        background: $secondary-color;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        a {
+            font-family: 'Sen', sans-serif;
+            color: $primary-color !important;
+            font-weight: 700;
+        }
+
+
+        ul {
+
+            .social-icons {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .uk-offcanvas-overlay {
+        background-color: rgba(144, 144, 144, 0.5) !important;
+    }
+}

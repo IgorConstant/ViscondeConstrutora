@@ -1,0 +1,119 @@
+#recompra {
+  .selo {
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+
+    > img {
+      margin-top: 60px;
+    }
+  }
+
+  .text-cta {
+    font-family: "Roboto Slab", serif;
+
+    @media (min-width: 1000px) {
+      margin-top: 25%;
+
+      .recompra {
+        font-size: 4.5rem;
+        margin-left: -50px;
+      }
+
+      .garantida {
+        font-size: 8rem;
+      }
+
+      .obs {
+        color: #08e1a4;
+        font-weight: 900;
+        font-size: 40px !important;
+        position: absolute;
+        top: 29%;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 20%;
+    }
+
+    .recompra {
+      font-weight: 400;
+      color: #000;
+      margin-bottom: 0px;
+      line-height: 0px;
+      text-transform: uppercase;
+
+      @media (max-width: 1000px) {
+        font-size: 3rem;
+      }
+    }
+
+    .garantida {
+      color: #08e1a4;
+      margin-bottom: 0px;
+      line-height: 100px;
+      font-weight: 900;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .text-description {
+    @media (min-width: 1200px) {
+      padding: 0px 100px;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+  }
+
+  .divider-area {
+    .dark-red {
+      background: #fff;
+      padding: 30px;
+
+      h3 {
+        text-transform: uppercase;
+        color: #9f9f9f;
+        font-weight: bold;
+        margin: 0px;
+        font-size: 2.5rem;
+      }
+
+      @media (min-width: 1200px) {
+        text-align: right;
+      }
+
+      @media screen and (max-width: 1099px) and (min-width: 900px) {
+        padding: 50px;
+      }
+    }
+
+    .black-area {
+      background: #000;
+
+      @media (min-width: 1000px) {
+        padding: 35px 70px;
+      }
+
+      padding: 35px;
+
+      h3 {
+        font-family: "Roboto Slab", serif;
+
+        a {
+          color: #fff;
+          text-transform: uppercase;
+          margin: 0px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

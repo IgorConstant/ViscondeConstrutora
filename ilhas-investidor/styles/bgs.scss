@@ -1,0 +1,75 @@
+#form-area {
+  .bg-predio {
+    background-image: url(../../assets/images/img-top.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 690px;
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1000px) {
+      height: 100%;
+    }
+  }
+
+  .form-contato {
+    background: url(../../assets/images/banner-forms.png) no-repeat center;
+    height: 690px;
+    background-size: cover;
+
+    @media (max-width: 1000px) {
+      height: 100%;
+    }
+  }
+}
+
+#parallax {
+  background-image: url(../../assets/images/banner-parallax.png);
+
+  /* Altura especifica */
+  min-height: 600px;
+
+  /* Efeito de deslize do Background */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .block-text {
+    padding-top: 10%;
+
+    .empreendimento {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 15px;
+
+      @media (max-width: 900px) {
+        font-size: 17px !important;
+        margin-top: 100px;
+        letter-spacing: 5px;
+      }
+    }
+
+    .consolidado {
+      font-family: "Roboto Slab", serif;
+      color: #05d49b;
+      font-size: 6rem;
+
+      @media (max-width: 900px) {
+        font-size: 35px !important;
+      }
+    }
+  }
+}
+
+#localizacao {
+  background-image: url(../../assets/images/banner-localizacao.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

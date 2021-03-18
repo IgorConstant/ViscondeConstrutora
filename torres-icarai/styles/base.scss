@@ -1,0 +1,279 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+}
+
+p,
+a,
+button {
+  font-family: $text-font;
+}
+
+#intro-politica {
+  background: $header-bg;
+  height: 400px;
+
+  h1 {
+    font-family: $title-font;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .uk-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#text-area-politica {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+}
+
+.copyright {
+  background: $header-bg;
+
+  @media (max-width: 768.98px) {
+    height: 530px;
+  }
+
+  .text-copy {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+      text-align: right;
+    }
+
+    @media (max-width: 900px) {
+      text-align: left;
+    }
+  }
+
+  .social-icons {
+    ul {
+      padding: 0px;
+      list-style: none;
+      margin-bottom: 0px;
+
+      >li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+          color: #afafaf;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#alert {
+  .cookie-popup {
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.15);
+    line-height: 150%;
+    transition: opacity 0.5s;
+    opacity: 0;
+
+    @media (max-width: 999px) {
+      left: 0.25rem;
+      margin-bottom: 6%;
+    }
+  }
+
+  .cookie-popup--short {
+    right: none;
+    width: 21.875rem;
+  }
+
+  .cookie-popup--dark {
+    background: #000;
+    color: #fff;
+  }
+
+  .cookie-popup--not-accepted {
+    opacity: 1;
+    animation: cookie-popup-in 0.5s ease forwards;
+  }
+
+  .cookie-popup--accepted {
+    opacity: 0;
+  }
+
+  .cookie-popup a {
+    color: skyblue;
+  }
+
+  .cookie-popup a:visited {
+    color: skyblue;
+    text-decoration: none;
+  }
+
+  .cookie-popup-actions {
+    flex: 1;
+    text-align: right;
+  }
+
+  .cookie-popup-actions button {
+    color: #fccf86;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .cookie-popup-actions button:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes cookie-popup-in {
+    from {
+      bottom: -6.25rem;
+    }
+
+    to {
+      bottom: 1.25rem;
+    }
+  }
+}
+
+
+.uk-modal-dialog {
+  background: #525252;
+
+  .title-form {
+    padding: 15px;
+
+    @media (max-width: 768.98px) {
+      padding: 30px 10px;
+    }
+
+    p {
+      color: #fff;
+      font-family: $title-font;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+
+  .uk-form-label {
+    color: #fff;
+    font-family: $text-font;
+  }
+
+  .uk-input {
+    border-radius: 5px;
+    background-color: $header-bg;
+    border: 1px solid #646464;
+    color: #fff;
+  }
+
+  .uk-button-default {
+    border-radius: 26px;
+    font-family: $title-font;
+    font-weight: 900;
+    border: none;
+    color: #000;
+    background: -moz-linear-gradient(41deg,
+        rgba(255, 167, 177, 1) 0%,
+        rgba(252, 207, 139, 1) 100%);
+    background: -webkit-linear-gradient(41deg,
+        rgba(255, 167, 177, 1) 0%,
+        rgba(252, 207, 139, 1) 100%);
+    background: linear-gradient(41deg,
+        rgba(255, 167, 177, 1) 0%,
+        rgba(252, 207, 139, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+    transition: all 0.3s ease 0s;
+    margin-top: 10px;
+
+    &:hover {
+      box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+      transform: translateY(-7px);
+    }
+  }
+}
+
+#tk-page {
+  background: #525252;
+  height: 100vh;
+
+  .logo-tdi {
+    margin: 60px 0;
+  }
+
+  .title {
+
+    h1,
+    h2 {
+      background: -webkit-linear-gradient(41deg, #ffa7b1, #fccf8b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .uk-button-default {
+      border-radius: 16px;
+      border: none;
+      color: #525252;
+      font-family: $title-font;
+      font-weight: 900;
+      background: -moz-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+      background: -webkit-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+      background: linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+      transition: all 0.3s ease 0s;
+      margin-top: 10px;
+
+      &:hover {
+        box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+        transform: translateY(-7px);
+      }
+    }
+  }
+}

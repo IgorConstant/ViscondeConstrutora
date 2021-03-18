@@ -1,0 +1,153 @@
+#plantas {
+    background: url(../../assets/images/bg-plantas.png) no-repeat center;
+
+    .text-plantas {
+        p {
+            font-size: 40px;
+            line-height: 40px;
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $orange-color;
+            margin-right: 120px;
+            margin-top: 80px;
+
+            span {
+                color: $blue-color;
+            }
+        }
+
+        .img-detail {
+            @media (min-width: 1024px) {
+                margin-right: 130px;
+            }
+        }
+    }
+
+    .description-plantas {
+        .opcoes-de-plantas-texto-apartamentos {
+            color: #303962;
+            font-size: 14px;
+            line-height: 16px;
+            padding-right: 130px;
+            margin: 80px 0;
+
+            span {
+                font-size: 24px;
+                line-height: 26px;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .nav-pills {
+        .nav-link {
+            color: $orange-color;
+            background-color: #eeeeee;
+
+            @media (max-width: 900px) {
+                padding: 0px;
+                font-size: 14px;
+            }
+        }
+
+        .nav-item {
+            border: 2px solid $orange-color;
+            background-color: $orange-color;
+            border-radius: 0px;
+        }
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background-color: $orange-color;
+        color: $white-color;
+        font-weight: 800;
+        border-radius: 0px;
+    }
+
+    .tab-content {
+        padding: 80px 110px;
+    }
+
+    .opcoes-de-plantas-desc-ap {
+        font-weight: 800;
+        color: $blue-color;
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 45px;
+    }
+
+    .opcoes-de-plantas-desc-ap span {
+        font-size: 45px;
+    }
+
+    .opcoes-de-plantas-desc-ap-texto {
+        text-transform: uppercase;
+        color: $blue-color;
+        line-height: 30px;
+    }
+
+    .opcoes-de-plantas-quero-conhecer {
+        text-transform: uppercase;
+        background-color: $green-btn;
+        color: $white-color;
+        padding: 15px 45px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 800;
+        display: inline-block;
+        margin-top: 15px;
+        cursor: pointer;
+        text-decoration: none;
+
+        transition: transform .5s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .tab-content {
+        background-color: $white-color;
+        box-shadow: 0px 15px 15px 0px rgba(50, 50, 50, 0.13);
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            padding: 60px 40px;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .container {
+            padding: 1.5rem;
+        }
+
+        .text-plantas {
+            p {
+                line-height: 40px;
+                text-align: left;
+                margin-top: 50px;
+                margin-right: 0px;
+            }
+        }
+
+        .img-detail {
+            text-align: left !important;
+        }
+
+        .description-plantas {
+            p {
+                padding-right: 0px !important;
+            }
+        }
+
+        .tab-content {
+            padding: 36px 28px;
+        }
+    }
+}

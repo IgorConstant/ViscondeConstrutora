@@ -1,0 +1,86 @@
+#localizacao {
+  @media (min-width: 1200px) {
+    padding: 100px 40px;
+  }
+
+  .text-intro {
+    h2 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-family: "Roboto Slab", serif;
+      font-weight: 100;
+
+      span {
+        color: #08e1a4;
+      }
+    }
+  }
+
+  .ballon {
+    background: #08e1a4;
+    line-height: 1.6em;
+    width: 350px;
+    height: auto;
+    color: #000;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid #08e1a4;
+      top: -18px; /*localização. Experimente alterar para 'bottom'*/
+      left: 6%;
+    }
+
+    .btn-map {
+      background-color: transparent;
+      text-transform: uppercase;
+      border: 1px solid #000;
+      font-weight: bold;
+      border-radius: 9px;
+      padding: 11px 15px;
+      color: #222;
+      font-size: 13px;
+      font-family: "Roboto Slab", serif;
+    }
+
+    p {
+      font-size: 15px;
+      padding: 18px 43px 8px 0px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 900px) {
+      width: 270px;
+    }
+  }
+
+  .list-block {
+    @media (min-width: 1200px) {
+      margin-top: 35%;
+    }
+
+    margin-top: 15px;
+
+    .localizacao-incrivel {
+      color: #08e1a4;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    ul {
+      padding: 0px 20px;
+      > li {
+        color: #fff;
+      }
+    }
+  }
+}

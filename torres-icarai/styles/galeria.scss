@@ -1,0 +1,62 @@
+#galeria {
+    .content {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.3s ease;
+        background: -moz-linear-gradient(41deg, rgba(255, 167, 177, 0.75) 0%, rgba(252, 207, 139, 0.75) 100%);
+        background: -webkit-linear-gradient(41deg, rgba(255, 167, 177, 0.75) 0%, rgba(252, 207, 139, 0.75) 100%);
+        background: linear-gradient(41deg, rgba(255, 167, 177, 0.75) 0%, rgba(252, 207, 139, 0.75) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1",endColorstr="#fccf8b",GradientType=1);
+    }
+
+    .content:hover .overlay {
+        opacity: 1;
+    }
+
+    .icon {
+        color: #000000;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .fa-search:hover {
+        color: #000000;
+    }
+
+    .lightbox-area {
+        background-color: #525252;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        color: #ffffff;
+        transition: 0.4s;
+        cursor: pointer;
+
+        p {
+            font-family: $title-font;
+        }
+
+        &:hover {
+            color: #535353;
+            background: -moz-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            background: -webkit-linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            background: linear-gradient(41deg, rgba(255, 167, 177, 1) 0%, rgba(252, 207, 139, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1",endColorstr="#fccf8b",GradientType=1);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+#banner-intro {
+    background-image: url(../../assets/images/banner-verdeslagos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+
+    @media (max-width: 1199px) {
+
+        .on-mobile-none,
+        .form-blue {
+            display: none;
+        }
+
+        height: 350px;
+
+    }
+
+    .form-blue {
+        background-color: #1fa3dc;
+        padding: 40px;
+
+        @media (min-width: 1200px) {
+            margin-top: 100px;
+            width: 391px;
+            height: 100%;
+            opacity: 0.95;
+        }
+
+        h2 {
+            font-family: "Bitter", serif;
+            color: #fff;
+            text-transform: uppercase;
+
+            @media (max-width: 900px) {
+                text-align: center;
+            }
+        }
+
+        .uk-form-label {
+            color: #fff !important;
+            font-family: "Roboto", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        label {
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+        }
+
+        .uk-button-default {
+            color: #fff;
+            background-color: #8ac714;
+            border-color: #8ac714;
+            font-weight: 900;
+            border-radius: 50px;
+            font-family: "Roboto", sans-serif;
+            padding: 10px 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .nao-aparece {
+        display: none;
+    }
+}

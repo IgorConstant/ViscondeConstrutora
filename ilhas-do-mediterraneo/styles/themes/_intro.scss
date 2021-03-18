@@ -1,0 +1,172 @@
+#intro {
+    .bg-predio {
+        background: url(../../assets/images/predio.jpg) no-repeat right center;
+        height: 626px;
+        background-size: cover;
+
+        .background-img-visconde {
+            background-color: #263b53;
+            width: 180px;
+            height: 140px;
+            right: 0px;
+            bottom: 0;
+            position: absolute;
+            padding: 30px;
+            border-top-left-radius: 50px;
+        }
+
+
+        @media (max-width: 900px) {
+            background: url(../../assets/images/predio.jpg) no-repeat center;
+
+            .background-img-visconde {
+                width: 180px;
+                height: 140px;
+                right: 0px;
+                bottom: -1px;
+                position: absolute;
+                padding: 30px;
+            }
+
+        }
+    }
+
+    .bg-green {
+        background: rgb(1, 110, 171);
+        background: -moz-linear-gradient(153deg, rgba(1, 110, 171, 1) 0%, rgba(22, 65, 92, 1) 59%);
+        background: -webkit-linear-gradient(153deg, rgba(1, 110, 171, 1) 0%, rgba(22, 65, 92, 1) 59%);
+        background: linear-gradient(153deg, rgba(1, 110, 171, 1) 0%, rgba(22, 65, 92, 1) 59%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#016eab", endColorstr="#16415c", GradientType=1);
+        height: 626px;
+        background-size: cover;
+
+        padding: 40px;
+
+        @media(max-width: 900px) {
+            height: 100%;
+        }
+
+        @media screen and (min-device-width: 1000px) and (max-device-width: 1400px) {
+            .cta-text {
+                h3 {
+                    font-size: 20px !important;
+                }
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            -webkit-animation: fadeIn ease-in 1;
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 80px 100px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $white-color;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .cta-text {
+            h3 {
+                color: $white-color;
+                font-size: 33px;
+            }
+        }
+
+        margin-top: 15px;
+
+
+        label {
+            color: $white-color;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        @media(min-width: 1600px) {
+            input {
+                width: 80%;
+            }
+
+
+        }
+
+        .form-check {
+            margin-top: 10px;
+        }
+
+        .form-check-input {
+            width: 9%;
+        }
+
+        .form-check-label {
+            margin-left: 15px;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+            }
+        }
+
+        .btn-default {
+            background-color: #00c86d;
+            color: $white-color;
+            border: none;
+            padding: 20px 25px;
+            font-weight: 800;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+    }
+}

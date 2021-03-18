@@ -1,0 +1,18 @@
+#tour-virtual {
+  @media (min-width: 1024px) {
+    padding: 20px 0 100px 0;
+  }
+
+  padding: 50px 0;
+
+  h1 {
+    font-family: "Sen", sans-serif;
+    color: #62d09e;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    span {
+      color: #000;
+    }
+  }
+}

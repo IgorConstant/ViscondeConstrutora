@@ -1,0 +1,24 @@
+#intro-politica {
+    background-color: $text-color;
+    height: 400px;
+
+    h1 {
+
+        text-align: center;
+        color: #fff;
+    }
+
+    .uk-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#text-area {
+
+    h3,
+    h6 {
+        font-weight: 700;
+    }
+}

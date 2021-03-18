@@ -1,0 +1,87 @@
+#oportunidades {
+  .container {
+    margin-top: -60px;
+
+    @media (min-width: 1200px) {
+      padding-bottom: 120px;
+    }
+  }
+
+  .descubra-a-oprtunidade-col {
+    .col-lg-6,
+    .col-lg-12 {
+      padding: 0px !important;
+    }
+
+    .casa-1 {
+      background: url(../../assets/images/casa1.jpg) no-repeat right center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 350px;
+    }
+
+    .casa-2 {
+      background: url(../../assets/images/casa2.jpg) no-repeat right center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 350px;
+    }
+
+    .casa-3 {
+      background: url(../../assets/images/casa3.jpg) no-repeat right center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 350px;
+    }
+
+    .casa-4 {
+      background: url(../../assets/images/casa4.png) no-repeat right center;
+      height: 700px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .casa-5 {
+      background: url(../../assets/images/casa5.jpg) no-repeat right center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 350px;
+    }
+
+    .oportunidade-cta {
+      background: #05d49b;
+      padding: 60px 45px;
+      height: 350px;
+
+      p {
+        color: #000000;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 17px;
+      }
+
+      .btn-download {
+        background: transparent;
+        margin-top: 15px;
+        border: 1px solid #000000;
+        text-align: left;
+        font-weight: bold;
+        padding: 16px 25px;
+        font-size: 14px;
+        color: #222222;
+        text-align: center;
+        font-family: "Roboto Slab", serif;
+      }
+    }
+  }
+}

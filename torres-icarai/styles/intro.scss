@@ -1,0 +1,162 @@
+#intro {
+  @media (min-width: 1024px) {
+    height: 630px;
+  }
+
+  @media (max-width: 960px) {
+    background: -moz-linear-gradient(41deg,
+        rgba(255, 167, 177, 1) 0%,
+        rgba(252, 207, 139, 1) 100%);
+    background: -webkit-linear-gradient(41deg,
+        rgba(255, 167, 177, 1) 0%,
+        rgba(252, 207, 139, 1) 100%);
+    background: linear-gradient(41deg,
+        rgba(255, 167, 177, 1) 0%,
+        rgba(252, 207, 139, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+    .logo-tdi {
+      display: none;
+    }
+
+    .icons-tdi {
+      display: none;
+    }
+  }
+
+  .color-block {
+    border-radius: $min-radius;
+
+    .block-cards {
+      .front-image {
+        transition: all 0.3s ease 0s;
+        margin-top: 10px;
+
+        &:hover {
+          box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+          transform: translateY(-7px);
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
+      height: 115px;
+      margin-top: 30px;
+      background: -moz-linear-gradient(41deg,
+          rgba(255, 167, 177, 1) 0%,
+          rgba(252, 207, 139, 1) 100%);
+      background: -webkit-linear-gradient(41deg,
+          rgba(255, 167, 177, 1) 0%,
+          rgba(252, 207, 139, 1) 100%);
+      background: linear-gradient(41deg,
+          rgba(255, 167, 177, 1) 0%,
+          rgba(252, 207, 139, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+      .icons-tdi {
+        padding-top: 30px;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .block-cards {
+        margin-top: 90px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .block-cards {
+        margin: 0 0 60px 0;
+      }
+    }
+
+    .form-area {
+      background: $primary-bg;
+      border-radius: $min-radius;
+      border-bottom: 5px solid;
+      border-image: radial-gradient(rgba(255, 167, 177, 1), rgba(252, 207, 139, 1)) 1;
+      margin: 20px 0 0 0;
+
+      @media (min-width: 1024px) {
+        margin: -50% 0 0 25px;
+        position: relative;
+      }
+
+      .logo-tdi {
+        img {
+          max-width: 80%;
+        }
+      }
+
+      .uk-form-label {
+        color: #fff;
+        font-family: $text-font;
+      }
+
+      .uk-input {
+        border-radius: 5px;
+        background-color: $header-bg;
+        border: 1px solid #646464;
+        color: #fff;
+      }
+
+      .uk-button-default {
+        border-radius: 26px;
+        font-family: $title-font;
+        font-weight: 900;
+        border: none;
+        color: #000;
+        background: -moz-linear-gradient(41deg,
+            rgba(255, 167, 177, 1) 0%,
+            rgba(252, 207, 139, 1) 100%);
+        background: -webkit-linear-gradient(41deg,
+            rgba(255, 167, 177, 1) 0%,
+            rgba(252, 207, 139, 1) 100%);
+        background: linear-gradient(41deg,
+            rgba(255, 167, 177, 1) 0%,
+            rgba(252, 207, 139, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa7b1", endColorstr="#fccf8b", GradientType=1);
+
+        transition: all 0.3s ease 0s;
+        margin-top: 10px;
+
+        &:hover {
+          box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+          transform: translateY(-7px);
+        }
+      }
+
+      .title-form {
+        padding: 25px 40px;
+
+        @media (max-width: 768.98px) {
+          padding: 30px 10px;
+        }
+
+        p {
+          color: #fff;
+          font-family: $title-font;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 25px;
+
+          span {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+
+  .soon {
+    @media (min-width: 1024px) {
+      margin: 40px;
+    }
+
+    @media (max-width: 999px) {
+      margin: 40px 40px 40px 40px;
+    }
+  }
+}

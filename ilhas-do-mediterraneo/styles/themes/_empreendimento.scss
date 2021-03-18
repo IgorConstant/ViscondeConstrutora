@@ -1,0 +1,110 @@
+#empreendimento {
+    @media (min-width: 1200px) {
+        .grid-area {
+            display: inline-grid;
+            grid-template-columns: 230px 230px 230px 380px;
+            grid-column-gap: 30px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .grid-area {
+            display: inline-grid;
+            grid-template-columns: 230px 230px 230px;
+            grid-column-gap: 30px;
+        }
+    }
+
+    .intro-text {
+        margin-top: 60px;
+
+        p {
+            text-transform: uppercase;
+            color: $blue-color;
+            font-size: 40px;
+            line-height: 45px;
+
+            span {
+                color: $green-color;
+                font-weight: 800;
+            }
+        }
+
+        .itu {
+            color: $blue-color;
+            font-weight: 800;
+            font-size: 25px;
+            background-color: $orange-color;
+            text-align: center;
+            width: 70%;
+        }
+    }
+
+    .list {
+        margin-top: 60px;
+
+        ul {
+            list-style: none;
+            padding: 0px 20px !important;
+
+            >li {
+                font-size: 12px;
+                color: $blue-color;
+            }
+        }
+    }
+
+    .img-parcelamento {
+        @media (min-width: 1200px) {
+            padding: 60px 0px;
+        }
+
+        @media (max-width: 1023px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    #banner-middle {
+
+        background-image: url(../../assets/images/banner-middle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+
+        .block-parcelamento {
+
+            img {
+                margin-top: 15%;
+            }
+
+            .btn-contact {
+                display: block;
+                padding-top: 15%;
+
+                a {
+                    padding: 20px 25px;
+                    background: $green-color;
+                    border-radius: 5px;
+                    font-weight: 800;
+                    color: $white-color !important;
+                    text-decoration: none;
+                }
+
+                transition: transform .5s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+        }
+
+        .img-casal {
+            @media(max-width: 900px) {
+                margin-top: 40px;
+            }
+        }
+    }
+}

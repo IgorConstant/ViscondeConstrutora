@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// 1. Variáveis Customizadas
+$header-bg: #3f3f3f;
+$primary-bg: #525252;
+$gradient-bg: rgb(255, 167, 177);
+$text-font: "Quicksand", sans-serif;
+$title-font: "Kufam", cursive;
+$link-color: #eaeaea;
+$font-color: #525252;
+$min-radius: 10px;
+
+// 2. Variáveis e Mixins
+@import "node_modules/uikit/src/scss/variables-theme.scss";
+@import "node_modules/uikit/src/scss/mixins-theme.scss";
+
+// 3. Mixins Personalizados.
+@mixin hook-card() {
+  color: #000;
+}
+
+// 4. UIkit.
+@import "node_modules/uikit/src/scss/uikit-theme.scss";
+
+// 5. Customizado
+@import "base";
+@import "header";
+@import "banner-topo";
+@import "intro";
+@import "about";
+@import "itens-de-lazer";
+@import "galeria";
+@import "plantas";
+@import "tour";
+@import "apresentacao";
+@import "footer";
+@import "social";

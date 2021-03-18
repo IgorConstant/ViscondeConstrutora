@@ -1,0 +1,185 @@
+header {
+
+    .uk-navbar {
+        transition: background-color 1s ease 0s;
+
+        .uk-navbar-nav {
+
+            a {
+                font-family: $primary-font;
+                color: $primary-color;
+                font-weight: 600;
+                text-transform: capitalize;
+                transition: .1s ease-in-out;
+                transition-property: color, background-color;
+            }
+
+        }
+
+        .btn-wpp {
+            color: #fff !important;
+            border-radius: 50px;
+            min-height: 38px !important;
+            background: $primary-color;
+            margin: 18px 0;
+
+            .fa-whatsapp {
+                margin-right: 5px;
+            }
+
+            animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+            box-shadow: 0 0 0 0 #0F8552;
+        }
+
+    }
+
+    .uk-sticky {
+        z-index: 100;
+        transition: background-color 1s ease 0s;
+    }
+
+    .solid {
+        background: $text-color;
+
+        .uk-logo {
+            width: 70%;
+            transition: 1s ease 0s;
+        }
+    }
+
+    @media(max-width: 767.98px) {
+        .uk-logo {
+            width: 70%;
+        }
+    }
+
+    .image {
+        background: url('../../assets/images/banner-topo.png') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -10%;
+
+        @media(max-width: 768.98px) {
+            margin-top: -30%
+        }
+
+
+        .uk-container {
+
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .text-chamada {
+                h2 {
+                    font-weight: 700;
+
+                    span {
+                        font-weight: 300;
+                    }
+
+                    mark {
+                        position: relative;
+                        transition: background-position 0.4s;
+                        transform: skewX(30deg);
+                        background-blend-mode: multiply;
+                        mix-blend-mode: multiply;
+                        animation: mark linear 2s forwards;
+                        color: $primary-color;
+                    }
+
+                    .dark-green {
+                        background: 0 0;
+                        background: linear-gradient(to right, rgba($primary-color, 0) 50%, rgba($text-color, 0.85) 50%);
+                        background-position: 0;
+                        background-size: 200%;
+                    }
+                }
+
+                @media(max-width: 767.98px) {
+                    margin-top: 500px;
+                }
+
+                @media(min-width: 768px) and (max-width: 999px) {
+                    margin-top: 250px;
+                }
+            }
+
+
+            .form-area {
+                background: #f4f4f4;
+                margin-top: 60px;
+                border-radius: 10px;
+
+                @media(max-width: 999px) {
+                    margin-top: 0px;
+                }
+
+                h3 {
+                    color: $text-color;
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 700;
+                    }
+
+                    @media(max-width: 767.98px) {
+                        font-size: 19px;
+                    }
+                }
+
+                small {
+                    font-weight: 700;
+                    color: $text-color;
+                }
+
+                .uk-form-label {
+                    font-weight: 800;
+                    color: #898989;
+                    font-size: 12px;
+                }
+
+                .uk-button-default {
+                    background: $primary-color;
+                    color: #fff;
+                    border-radius: 10px;
+                    font-weight: 800;
+                    font-family: $primary-font;
+                    margin-top: 15px;
+
+                    @media(min-width: 1024px) {
+                        padding: 10px;
+                    }
+
+                    transition: all 0.3s ease 0s;
+                    margin-top: 10px;
+
+                    &:hover {
+                        box-shadow: 0px 15px 20px rgba(18, 53, 31, 0.4);
+                        transform: translateY(-7px);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .uk-offcanvas-bar {
+        background-color: $text-color;
+
+        .uk-nav-primary {
+            >li {
+                a {
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: $primary-color;
+                }
+            }
+
+            .social-icons {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+#galeria {
+    .container {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba(144, 144, 144, 0.5);
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .icon {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .fa-search:hover {
+        color: #eee;
+    }
+
+    .lightbox-area {
+        background-color: #191917;
+        border-bottom: 3px solid $primary-color;
+        font-family: 'Sen', sans-serif;
+        color: $primary-color;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(133deg, rgba(55, 149, 70, 1) 40%, rgba(100, 211, 163, 1) 86%);
+            color: $secondary-color;
+        }
+    }
+
+}

@@ -1,0 +1,136 @@
+footer {
+    .bg-blue {
+        background: url(../../assets/images/bg-footer.png) no-repeat right center;
+        height: 626px;
+        background-size: cover;
+
+        .text-footer {
+            padding-top: 90px;
+
+            p {
+                font-weight: 800;
+                text-transform: uppercase;
+                color: $white-color;
+                font-size: 26px;
+            }
+        }
+
+        .ballon-footer {
+            background: $blue-color;
+            line-height: 1.6em;
+            width: 350px;
+            height: auto;
+            color: $white-color;
+            padding: 20px;
+            position: relative;
+            margin-top: 30px;
+
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 20px solid $blue-color;
+                top: -18px;
+                /*localização. Experimente alterar para 'bottom'*/
+                left: 6%;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .visite-nosso-stand-p-footer {
+            padding: 30px 50px;
+            display: inline-block;
+            position: absolute;
+            right: 180px;
+            bottom: 0;
+            color: #fff;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .visite-nosso-stand-img-footer {
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+            background-color: #263b53;
+            padding: 40px 25px;
+        }
+
+        @media (max-width: 900px) {
+            .visite-nosso-stand-p-footer {
+                display: none;
+            }
+        }
+    }
+
+    .bg-green {
+        background: rgb(1, 110, 171);
+        background: -moz-linear-gradient(153deg, rgba(1, 110, 171, 1) 0%, rgba(22, 65, 92, 1) 59%);
+        background: -webkit-linear-gradient(153deg, rgba(1, 110, 171, 1) 0%, rgba(22, 65, 92, 1) 59%);
+        background: linear-gradient(153deg, rgba(1, 110, 171, 1) 0%, rgba(22, 65, 92, 1) 59%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#016eab", endColorstr="#16415c", GradientType=1);
+        height: 626px;
+        background-size: cover;
+
+        padding: 40px;
+
+        @media (min-width: 1200px) {
+            padding: 80px 100px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $white-color;
+        }
+
+
+        label {
+            color: $white-color;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        @media(min-width: 1200px) {
+            input {
+                width: 80%;
+            }
+        }
+
+        .form-check {
+            margin-top: 10px;
+        }
+
+        .form-check-input {
+            width: 9%;
+        }
+
+        .form-check-label {
+            margin-left: 15px;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+            }
+        }
+
+
+        .btn-default {
+            background-color: $green-btn;
+            color: $white-color;
+            border: none;
+            padding: 20px 25px;
+            font-weight: 800;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+    }
+}

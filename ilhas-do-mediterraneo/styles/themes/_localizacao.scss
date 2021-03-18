@@ -1,0 +1,118 @@
+#localizacao {
+    background-color: #e7e7e7;
+
+    .ultima-unidade {
+        background-color: #cf2402;
+
+        padding: 25px;
+
+        p {
+            font-weight: 800;
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+
+    .hover-area {
+        background-color: #e2300c;
+        color: #fff;
+        padding: 30px 25px !important;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+        @media (max-width: 1023px) {
+            padding: 20px !important;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .text-area {
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+        p {
+            color: $blue-color;
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: 45px;
+
+            span {
+                color: $orange-color;
+                font-weight: 800;
+            }
+        }
+    }
+
+    .list-area {
+        margin-top: 20px;
+
+        p {
+            font-size: 22px;
+            color: $orange-color;
+            font-weight: 800;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-area {
+                display: inline-grid;
+                grid-template-columns: 170px 180px;
+                grid-column-gap: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 900px) {
+            .grid-area {
+                display: inline-grid;
+                grid-template-columns: 170px 180px;
+                grid-column-gap: 20px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+
+            >li {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .localizacao-incrivel-a {
+        background-color: $green-color;
+        font-weight: 800;
+        color: $white-color;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .img-entrada {
+        background: url(../../assets/images/bg-local.png) no-repeat center;
+        height: 611px;
+        background-size: cover;
+
+        .bubble {
+            img {
+                margin-top: 51px;
+                float: right;
+            }
+        }
+    }
+}

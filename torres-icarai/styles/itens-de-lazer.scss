@@ -1,0 +1,94 @@
+#itens-de-lazer {
+  .block-solid-color {
+    background: #525252;
+    height: 100%;
+
+    @media (max-width: 999px) {
+      height: 400px;
+    }
+  }
+
+  .block-icons {
+    padding: 5%;
+
+    ul {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: wrap;
+      list-style: none;
+      padding: 0px;
+
+      > li {
+        width: 32%;
+        text-align: left;
+        margin: 0.75rem 0;
+        font-size: 14px;
+        line-height: 100%;
+        color: #a3a3a3;
+        font-weight: 900;
+        font-family: $title-font;
+        text-transform: uppercase;
+
+        b {
+          width: 35px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+
+        @media (max-width: 768.98px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#icons-feature {
+  .uk-background-one {
+    background-color: #ffe7cf;
+    display: flex;
+    justify-content: center;
+  }
+
+  .uk-background-two {
+    background-color: #fcc891;
+    display: flex;
+    justify-content: center;
+  }
+
+  .uk-background-three {
+    background-color: #ffe7cf;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 0px;
+    margin-bottom: 0px;
+
+    > li {
+      width: 100%;
+      text-align: left;
+      font-size: 22px;
+      line-height: 100%;
+      color: #a3a3a3;
+      font-weight: 900;
+      font-family: $title-font;
+      text-transform: uppercase;
+
+      b {
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 12px;
+        color: #525252;
+      }
+    }
+  }
+}

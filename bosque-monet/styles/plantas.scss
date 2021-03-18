@@ -1,0 +1,127 @@
+#plantas {
+    .uk-tab {
+        margin: 0px !important;
+
+        .uk-active {
+            background-color: $text-color;
+
+            a {
+                color: #fff;
+                padding: 15px 5px;
+                font-size: 14px;
+                font-weight: 700;
+
+                @media only screen and (min-width: 980px) and (max-width: 1099px) {
+                    font-size: 11px;
+                }
+            }
+
+        }
+
+        li {
+            border: 1px solid #61605d;
+            background-color: #f4f4f4;
+            padding: 0px;
+
+            a {
+                color: $text-color;
+                border-bottom: none;
+                padding: 15px 5px;
+                font-size: 14px;
+                font-weight: 700;
+
+                @media only screen and (min-width: 980px) and (max-width: 1099px) {
+                    font-size: 11px;
+                }
+
+                .metragem {
+                    text-transform: initial;
+                }
+            }
+        }
+    }
+
+    #content {
+        box-shadow: 0px 15px 15px 0px rgba(50, 50, 50, 0.13);
+        transition: 1s;
+
+        @media (min-width: 1024px) {
+            padding: 80px 110px;
+        }
+
+        @media (max-width: 999px) {
+            padding: 40px;
+        }
+
+        .text-planta {
+            h1 {
+                color: $text-color;
+                font-weight: 700;
+            }
+
+            p {
+                color: $text-color;
+                font-size: 17px;
+
+                @media(max-width: 768.98px) {
+                    font-size: 14px;
+                }
+            }
+
+            .badge {
+                background-color: $primary-color;
+                padding: 5px;
+                font-size: 13px;
+                font-weight: 700;
+                border-radius: 50px;
+                width: 50%;
+
+                @media(max-width: 768.98px) {
+                    width: 70%;
+                }
+            }
+
+            .badge-garden {
+                background-color: $primary-color;
+                padding: 5px;
+                font-size: 13px;
+                font-weight: 700;
+                border-radius: 50px;
+                width: 80%;
+
+                @media(max-width: 768.98px) {
+                    width: 100%;
+                }
+            }
+
+            .garden-additional {
+                font-weight: 700;
+            }
+
+            .uk-button-default {
+                background: $primary-color;
+                color: #fff;
+                font-weight: 700;
+                padding: 8px 40px;
+                border-radius: 10px;
+                display: inline-block;
+                margin-top: 20px;
+                -webkit-transition: -webkit-transform 0.5s ease;
+                transition: -webkit-transform 0.5s ease;
+                transition: transform 0.5s ease;
+                transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+                font-family: $primary-font;
+
+                @media(max-width: 900px) {
+                    padding: 8px 30px;
+                }
+
+                transition: transform .5s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
