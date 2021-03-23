@@ -32,33 +32,49 @@
         </form>
     </div>
 </section>
-<div class="uk-container uk-padding">
-    <div class="form-contact">
-        <form method="POST" action="" id="frmContato" uk-grid>
-            <div class="uk-width-1-1">
-                <label class="uk-form-label">Seu nome *</label>
-                <input class="uk-input" id="nome" name="nome" type="text" placeholder="Insira seu nome completo" />
+
+
+<div class="form-block">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-flex uk-flex-middle">
+                   <img src="assets/images/new-detail.png" alt="detail">
+                </div>
             </div>
-            <div class="uk-width-1-2@s">
-                <label class="uk-form-label">Seu Telefone *</label>
-                <input class="uk-input" id="cel-1" name="celular" type="text" placeholder="Insira seu telefone" />
+            <div>
+                <div>
+                    <div class="form-contact">
+                        <form method="POST" action="" id="frmContato" uk-grid>
+                            <div class="uk-width-1-1">
+                                <label class="uk-form-label">Seu nome *</label>
+                                <input class="uk-input" id="nome" name="nome" type="text" placeholder="Insira seu nome completo" />
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label">Seu Telefone *</label>
+                                <input class="uk-input" id="cel-1" name="celular" type="text" placeholder="Insira seu telefone" />
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label">Seu email *</label>
+                                <input class="uk-input" id="email" name="email" type="email" placeholder="Insira seu E-mail" />
+                            </div>
+                            <div class="uk-width-1-1">
+                                <button type="submit" id="bt-enviar" class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" value="save-prospect">QUERO RECEBER MAIS INFORMAÇÕES</button>
+                            </div>
+                        </form>
+                        <br>
+                        <div id="message-box" class="alert alert-dismissible" style="display:none">
+                            <p id="message" class="text-center m-0"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="uk-width-1-2@s">
-                <label class="uk-form-label">Seu email *</label>
-                <input class="uk-input" id="email" name="email" type="email" placeholder="Insira seu E-mail" />
-            </div>
-            <div class="uk-width-1-1">
-                <button type="submit" id="bt-enviar" class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" value="save-prospect">QUERO RECEBER MAIS INFORMAÇÕES</button>
-            </div>
-        </form>
-        <br>
-        <div id="message-box" class="alert alert-dismissible" style="display:none">
-            <p id="message" class="text-center m-0"></p>
         </div>
     </div>
 </div>
 
-<div class="icons-area uk-padding uk-visible@l" data-aos="fade-up">
+
+<div class="icons-area uk-padding uk-visible@l">
     <div class="uk-container">
         <table class="uk-table uk-table-middle">
             <tbody>

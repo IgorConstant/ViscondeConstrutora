@@ -6,26 +6,17 @@
             <div class="uk-position-top-right selo-visconde">
                 <img src="assets/images/selo-visconde.png" alt="selo-visconde">
             </div>
-            <div class="uk-position-top-left uk-margin-top chamada-text">
-                <img width="80%" src="assets/images/img-banner.png" alt="financiamento">
-            </div>
         </li>
         <li>
             <img src="assets/images/vdt_churrasqueira.jpg" alt="vdt-churrasqueira">
             <div class="uk-position-top-right selo-visconde">
                 <img src="assets/images/selo-visconde.png" alt="selo-visconde">
             </div>
-            <div class="uk-position-top-left uk-margin-top chamada-text">
-                <img width="80%" src="assets/images/img-banner.png" alt="financiamento">
-            </div>
         </li>
         <li>
             <img src="assets/images/vdt_varanda.jpg" alt="vdt-varanda">
             <div class="uk-position-top-right selo-visconde">
                 <img src="assets/images/selo-visconde.png" alt="selo-visconde">
-            </div>
-            <div class="uk-position-top-left uk-margin-top chamada-text">
-                <img width="80%" src="assets/images/img-banner.png" alt="financiamento">
             </div>
         </li>
     </ul>
