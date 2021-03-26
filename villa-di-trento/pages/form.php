@@ -39,12 +39,13 @@
         <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
             <div>
                 <div class="uk-flex uk-flex-middle">
-                   <img src="assets/images/new-detail.png" alt="detail">
+                    <img src="assets/images/new-detail.png" alt="detail">
                 </div>
             </div>
             <div>
                 <div>
                     <div class="form-contact">
+                        <h3 class="uk-text-center">Cadastre-se e conheça</h3>
                         <form method="POST" action="" id="frmContato" uk-grid>
                             <div class="uk-width-1-1">
                                 <label class="uk-form-label">Seu nome *</label>
