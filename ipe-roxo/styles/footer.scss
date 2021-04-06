@@ -1,0 +1,81 @@
+footer {
+    .purple-block {
+        background: #612179;
+        height: 500px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+
+            @media (min-width: 1024px) {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            .fa-phone-alt,
+            .fa-whatsapp,
+            .fa-map-marker-alt {
+                color: #fff;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    #mapArea {
+        height: 500px;
+    }
+
+    .copyright {
+        @media (max-width: 900px) {
+            text-align: center;
+        }
+
+        @media (min-width: 1200px) {
+            .logo-visconde-footer {
+                width: 70%;
+                margin-top: -16px;
+            }
+        }
+
+        .text-footer {
+            p {
+                color: #4e6084;
+                font-weight: 500;
+                font-size: 14px;
+
+                @media (min-width: 1200px) {
+                    text-align: right;
+                }
+            }
+
+            .assinatura-duetto {
+                text-decoration: none;
+                color: #fbbe00;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+
+            li {
+                display: inline-block;
+            }
+        }
+
+        .social-icons {
+            .fa-linkedin,
+            .fa-facebook-square,
+            .fa-instagram {
+                color: #4e6084;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+        }
+    }
+}

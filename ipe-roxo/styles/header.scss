@@ -1,0 +1,64 @@
+header {
+    .uk-sticky {
+        background: #fff;
+        box-shadow: 2px 2px 50px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .uk-navbar-nav {
+        > li {
+            a {
+                font-family: "Sora", sans-serif !important;
+                color: #493a1b;
+            }
+        }
+    }
+
+    .btn-wpp {
+        background: $primary-color;
+        color: #fff !important;
+        border-radius: 50px;
+        min-height: 38px !important;
+        margin: 18px 0;
+        font-family: "Sora", sans-serif !important;
+        text-transform: capitalize !important;
+
+        .fa-whatsapp {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+        box-shadow: 0 0 0 0 $primary-color;
+
+        @media (max-width: 999px) {
+            border-radius: 100%;
+            margin: 20px;
+            padding: 10px 20px;
+
+            .fa-whatsapp {
+                font-size: 35px;
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .uk-offcanvas-bar {
+        background-color: #fff;
+
+        .uk-nav-primary {
+            > li {
+                a {
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: #493a1b;
+                    font-family: "Sora", sans-serif !important;
+                }
+            }
+
+            .social-icons {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}

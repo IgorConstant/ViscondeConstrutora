@@ -1,0 +1,261 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+    }
+}
+
+p,
+span,
+a,
+button,
+label,
+.uk-button-default {
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+#social {
+    ul {
+        list-style: none;
+
+        > li {
+            background-color: $primary-color;
+
+            a {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .sidebar-social {
+        position: fixed;
+    }
+
+    @media (min-width: 1024px) {
+        .sidebar-social {
+            top: 0;
+            right: 0;
+            bottom: 20px;
+            top: 40%;
+            display: table;
+            z-index: 2;
+            position: fixed;
+            width: 90px;
+
+            .list-one,
+            .list-two {
+                margin-bottom: 10px;
+                text-align: center;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                padding: 6px;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        margin-top: 40px;
+
+        .sidebar-social {
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            max-width: 100%;
+            z-index: 1000200;
+
+            ul {
+                padding: 0px;
+            }
+
+            a {
+                position: relative;
+                margin: 0;
+                outline-offset: -1px;
+                text-align: center;
+                float: left;
+                transition: width 0.15s ease-in-out;
+                overflow: hidden;
+                z-index: 100030;
+                cursor: pointer;
+                border-radius: 0px;
+                width: 100%;
+                color: #fff;
+                background-color: $primary-color;
+                padding: 5px 0;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+#tk-page {
+    background: #fff;
+    height: 100vh;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 700;
+
+    .uk-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .title {
+            h1,
+            h2 {
+                color: $primary-color;
+                font-family: "Baloo Tamma 2", cursive;
+                font-weight: 700;
+            }
+
+            h2 {
+                margin-top: 20px;
+                font-family: "Baloo Tamma 2", cursive;
+                font-weight: 700;
+            }
+
+            .uk-button-default {
+                color: #fff;
+                background: $primary-color;
+                border: none;
+                font-weight: 700;
+                border-radius: 50px;
+                padding: 10px 40px;
+                font-family: "Baloo Tamma 2", cursive;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.cookie-popup {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.15);
+    line-height: 150%;
+    transition: opacity 0.5s;
+    opacity: 0;
+    font-family: "Baloo Tamma 2", cursive;
+
+    @media (max-width: 999px) {
+        left: 0.25rem;
+        margin-bottom: 6%;
+    }
+}
+
+.cookie-popup--short {
+    right: none;
+    width: 21.875rem;
+}
+
+.cookie-popup--dark {
+    background: #000;
+    color: #fff;
+}
+
+.cookie-popup--not-accepted {
+    opacity: 1;
+    animation: cookie-popup-in 0.5s ease forwards;
+}
+
+.cookie-popup--accepted {
+    opacity: 0;
+}
+
+.cookie-popup a {
+    color: skyblue;
+}
+
+.cookie-popup a:visited {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.cookie-popup-actions {
+    flex: 1;
+    text-align: right;
+}
+
+.cookie-popup-actions button {
+    color: $primary-color;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cookie-popup-actions button:hover {
+    text-decoration: underline;
+}
+
+@keyframes cookie-popup-in {
+    from {
+        bottom: -6.25rem;
+    }
+
+    to {
+        bottom: 1.25rem;
+    }
+}
+
+#intro-politica {
+    background: $primary-color;
+    height: 400px;
+
+    h1 {
+        font-family: "Baloo Tamma 2", cursive;
+        text-align: center;
+        color: #fff;
+        font-weight: 900;
+    }
+
+    .uk-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#text-area-politica {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Baloo Tamma 2", cursive;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    p {
+        margin: 0px;
+    }
+}
